@@ -16,4 +16,40 @@ body{
     background-color: red;
     width: 60%;
     height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+
+#carouselExampleAutoplaying{
+    width: 50%;
+    height: 100%;
+    background-color: green;
+    overflow: hidden;
+}
+
+#carouselExampleAutoplaying .carousel-inner img{
+  width: 100%;
+  height: 655px;  
+  
+}
+
+/* .carousel-inner img{
+ position: relative; 
+ z-index: 2;
+    
+  }
+
+.logo{
+    position: absolute;
+    z-index: 1;
+} */
+
+
+
+.formulario{
+    width: 50%;
+    height: 100%;
+    background-color:gray;
 }
