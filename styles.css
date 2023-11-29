@@ -30,7 +30,7 @@ body{
     height: 100%;
     background-color: green;
     overflow: hidden;
-    border-radius: 30px;
+    border-radius: 30px 0  0  30px;
 }
 
 #carouselExampleAutoplaying .carousel-inner img{
@@ -38,11 +38,6 @@ body{
   height: 655px;  
   
 }
-
-
-
-
-
 
 
 .registroVisita{
@@ -57,14 +52,33 @@ body{
 .containerRegistro{
     /* background-color: rgb(18, 160, 18); */
     width: 85%;
-    /* height: 85%; */
-    height: 30%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: center;
+    
 }
+
+.logoCFE{
+    width: 100%;
+    height: 25%;
+    background-color: #555;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.logoCFE img{
+width:65%;
+height: auto;
+}
+
 .cabezeraRegistro{
     width: 100%;
-    height: 15%;
-    background-color: #555;
-    padding: 25px;
+    height: 45%;
+    /* background-color: #555; */
     border-radius: 10px;
 }
 .cabezeraRegistro h2{
@@ -77,7 +91,9 @@ body{
   letter-spacing: 1px;
   text-transform: uppercase;
   color: white;
-  text-shadow: 0 0 5px #000000;
+  text-shadow: 0 0 10px #008E5A;
+  text-align: center;
+  color: #008E5A;
 }
 
 .formulario{
@@ -85,24 +101,65 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 85%;
+    height: 12%;
 }
 
-.formulario label{
-    font-family: Arial, Helvetica, sans-serif;
-    color: #008E5A;
-    font-size: 2rem;
-}
 
-.formulario input{
-   margin-bottom: 15px;
-   border-radius: 10px;
-   width: 70%;
-   padding: 10px;
-   text-align: center;
-   color: #008E5A;
-}
+/* boton con efecto */
+.recorridoB{
+    width: 100%;
+    height: 100%;
+    background:#008E5A;
+    color:#fff;
+    border:none;
+    position:relative;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+    border-radius: 10px;
+  }
+  .recorridoB:hover{
+    background:#fff;
+    color:#008E5A !important;
+    
+  }
+  .recorridoB:before,.recorridoB:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #008E5A;
+    transition:400ms ease all;
+    color:#008E5A !important;
+  }
+  .recorridoB:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+    color:#008E5A !important;
+  }
+  .recorridoB:hover:before,.recorridoB:hover:after{
+    width:100%;
+    transition:800ms ease all;
+    color:#008E5A !important;
+  }
 
-.subBoton:hover{
-    background-color: #008E5A;
-    color: white;
-}
+  a:visited {
+    color: inherit; /* Hereda el color del elemento padre */
+  }
+
+/* ------------ */
+
+
+/* responsibidad */
+/* @media only screen and (max-width: 600px) {
+    .containerPrincipal{
+        width: 100%;
+    }
+  } */
